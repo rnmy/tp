@@ -257,19 +257,29 @@ Format: `list-consult`
 
 Creates a copy of all current data, tagged with the current date and time.
 
-Running this command will create a file (e.g. `tasker_2020-09-13_1041`) containing all your saved data, in your `/data` folder.
+Running this command will create a new json file containing all your saved data, in your `/data` folder.
 
 Format: `archive`
 
-![result for archive command](images/archiveCommandResult.png)
+Example:
+
+- `archive` creates a json file called `tasker_2020-11-09_2113.json` as shown below.
+
+  ![result for 'archive'](images/archiveResult.png)
 
 ### Exporting attendance : `exportatt`
 
 Exports attendance to a csv file in `data/attendance_YYYY-MM-DD_HHmm.csv`
 
-Running this command will create a new csv file (e.g. `attendance_2020-09-13_1041.csv`) in your `/data` folder. Each column corresponds to a student and each row corresponds to a date. Every cell is marked with either `ATTENDED` or `ABSENT` depending on whether the student has attended that day.
+Running this command will create a new csv file in your `/data` folder. Each column corresponds to a student and each row corresponds to a date. Every cell is marked with either `ATTENDED` or `ABSENT` depending on whether the student has attended that day.
 
 Format: `exportatt`
+
+Example:
+
+- `exportatt` creates a csv file called `attendance_2020-11-09_2055.csv` as shown below.
+
+  ![result for 'exportatt'](images/exportattResult.png)
 
 ### Exiting the program : `exit`
 
