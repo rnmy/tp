@@ -11,7 +11,7 @@ TAsker is a **desktop app for Teaching Assistants (TAs) to manage student admini
 
 ---
 
-## Quick start
+## Quick Start
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
@@ -97,7 +97,7 @@ Examples:
 
 Shows a list of all students that the TA is in-charge of.
 
-You may navigate to the Students tab to view the full list of students.
+You may click on the Students tab to view the full list of students.
 
 Format: `list`
 
@@ -189,6 +189,10 @@ Marks the student as present for tutorial on a specified date.
 
 Format: `attend INDEX d/DATE`
 
+![Attend](images/AddAttendance.png)
+
+For: `attend 1 d/12/12/2000` 
+
 Examples:
 
 - `attend 1 d/12/12/2000` Marks the student at index 1 as present on 12 December 2000.
@@ -200,6 +204,11 @@ Marks the student as absent (default) for tutorial on a specified date.
 
 Format: `unattend INDEX d/DATE`
 
+![Unattend](images/RemoveAttendance.png)
+
+For: `unattend 1 d/12/12/2000` (This **particular** illustration requires `attend 1 d/12/12/2000` to be ran first)
+
+Examples:
 - `unattend 1 d/12/12/2000` Marks the student at index 1 as absent on 12 December 2000.
 - `unattend 2 d/12/01/2002` Marks the student at index 2 as absent on 12 January 2002.
 
@@ -218,6 +227,8 @@ Examples:
 - `add-consult n/John Doe d/10/10/2020 tm/18:00 a/SOC Basement ty/personal`
 - `add-consult n/Ann Lim d/30/05/2020 tm/11:00 a/Tembusu College ty/group `
 
+![result for add consult command](images/addConsultResult.png)
+
 ### Deleting a consultation: `del-consult`
 
 Deletes a consultation from the address book.
@@ -230,13 +241,17 @@ Examples:
 
 - `del-consult 1`
 
+![result for delete consult command](images/delConsultResult.png)
+
 ### Listing all consultations: `list-consult`
 
-Shows a list of all consultations in charge by the TA. 
+Shows a list of all consultations that has been arranged with your students.
 
-You may navigate to the Consultations tab to view the full list of consultations.
+You may click on the Consultations tab to view the full list of consultations.
 
 Format: `list-consult`
+
+![result for list consult command](images/listConsultResult.png)
 
 ### Archiving data files : `archive`
 
@@ -283,7 +298,7 @@ Format: `exit`
 
 **Q**: How do I transfer my data to another Computer?
 <br>
-**A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous TAsker home folder.
+**A**: Install the app in the other computer and overwrite the `data` folder that TAsker creates with the `data` folder from your previous TAsker installation. The `data` folder should be in the folder where TAsker is installed to.
 <br>
 
 **Q**: Can I import existing spreadsheets of my students?
@@ -308,7 +323,7 @@ Format: `exit`
 
 ---
 
-## Command summary
+## Command Summary
 
 | Action                   | Format, Examples                                                                                                                                                                                                           |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
