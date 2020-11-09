@@ -95,7 +95,7 @@ Examples:
 
 ### Listing all students : `list`
 
-Shows a list of all students in charge by the TA.
+Shows a list of all students that the TA is in-charge of.
 
 You may navigate to the Students tab to view the full list of students.
 
